@@ -1,0 +1,56 @@
+[
+  {
+    "name": "substrate",
+    "key": {
+      "field": "A1",
+      "phrase": "substrate"
+    },
+    "field_def": {
+      "reef name": "B2",
+      "dive site name": "B3",
+      "dive site number": "B4",
+      "depth": "B5",
+      "habitat": "B6",
+      "date": { "field": "B7", "type": "date"},
+      "time": { "field": "B8", "type": "time"},
+      "entered by": "B9",
+      "surveyor": "B10",
+      "team leader": "B11",
+      "camera id": "B12",
+      "0-20m": {
+        "range": "B14:B53",
+        "label_template": "obs_{0}",
+        "label_start": 0,
+        "label_increment": 0.5
+      },
+      "25-45m": {
+        "range": "D14:B53",
+        "label_template": "obs_{0}",
+        "label_start": 25,
+        "label_increment": 0.5
+      },
+      "50-70m": {
+        "range": "F14:B53",
+        "label_template": "obs_{0}",
+        "label_start": 50,
+        "label_increment": 0.5
+      },
+      "75-95m": {
+        "range": "H14:B53",
+        "label_template": "obs_{0}",
+        "label_start": 75,
+        "label_increment": 0.5
+      },
+      "ma tally 0-20m": "B55",
+      "ma tally 25-45m": "D55",
+      "ma tally 50-70m": "F55",
+      "ma tally 75-95m": "H55",
+      "silt level": "H57",
+      "comments": {
+        "field": "B59",
+        "type": "comma-separated",
+        "label_template": "comment_{0}"
+      }
+    }
+  }
+]
