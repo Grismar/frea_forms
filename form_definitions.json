@@ -11,8 +11,8 @@
       "dive site number": "B4",
       "depth": "B5",
       "habitat": "B6",
-      "date": { "field": "B7", "type": "date"},
-      "time": { "field": "B8", "type": "time"},
+      "date": { "field": "B7", "type": "date", "format": "%d/%m/%Y" },
+      "time": { "field": "B8", "type": "time", "format": "%H:%M" },
       "entered by": "B9",
       "surveyor": "B10",
       "team leader": "B11",
@@ -48,6 +48,447 @@
       "silt level": "H57",
       "comments": {
         "field": "B59",
+        "type": "comma-separated",
+        "label_template": "comment_{0}"
+      }
+    }
+  },
+  {
+    "name": "invert",
+    "key": {
+      "field": "A1",
+      "phrase": "invert"
+    },
+    "field_def": {
+      "reef name": "B2",
+      "dive site name": "B3",
+      "dive site number": "B4",
+      "depth": "B5",
+      "habitat": "B6",
+      "date": { "field": "B7", "type": "date", "format": "%d/%m/%Y" },
+      "time": { "field": "B8", "type": "time", "format": "%H:%M" },
+      "entered by": "B9",
+      "surveyor": "B10",
+      "team leader": "B11",
+      "camera id": "B12",
+      "anemone with fish": {
+        "range": "B14:E14",
+        "label_template": "anemone with fish {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "anemone without fish": {
+        "range": "B15:E15",
+        "label_template": "anemone without fish {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "banded coral shrimp": {
+        "range": "B16:E16",
+        "label_template": "banded coral shrimp {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "crown of thorns < 6cm": {
+        "range": "B17:E17",
+        "label_template": "crown of thorns < 6cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "crown of thorns 6-15cm": {
+        "range": "B18:E18",
+        "label_template": "crown of thorns 6-15cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "crown of thorns 15-25cm": {
+        "range": "B19:E19",
+        "label_template": "crown of thorns 15-25cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "crown of thorns > 25cm": {
+        "range": "B20:E20",
+        "label_template": "crown of thorns > 25cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam < 10cm": {
+        "range": "B21:E21",
+        "label_template": "giant clam < 10cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam 10-20cm": {
+        "range": "B22:E22",
+        "label_template": "giant clam 10-20cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam 20-30cm": {
+        "range": "B23:E23",
+        "label_template": "giant clam 20-30cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam 30-40cm": {
+        "range": "B24:E24",
+        "label_template": "giant clam 30-40cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam 40-50cm": {
+        "range": "B25:E25",
+        "label_template": "giant clam 40-50cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "giant clam >50cm": {
+        "range": "B26:E26",
+        "label_template": "giant clam >50cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "lobster, spiny & slipper": {
+        "range": "B27:E27",
+        "label_template": "lobster, spiny & slipper {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "shells drupella": {
+        "range": "B28:E28",
+        "label_template": "shells drupella {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "shells triton": {
+        "range": "B29:E29",
+        "label_template": "shells triton {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "shells trochus": {
+        "range": "B30:E30",
+        "label_template": "shells trochus {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea cucumbers pinkfish": {
+        "range": "B31:E31",
+        "label_template": "sea cucumbers pinkfish {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea cucumbers prickly greenfish": {
+        "range": "B32:E32",
+        "label_template": "sea cucumbers prickly greenfish {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea cucumbers prickly redfish": {
+        "range": "B33:E33",
+        "label_template": "sea cucumbers prickly redfish {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea urchins collector": {
+        "range": "B34:E34",
+        "label_template": "sea urchins collector {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea urchins diadema": {
+        "range": "B35:E35",
+        "label_template": "sea urchins diadema {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sea urchins pencil": {
+        "range": "B36:E36",
+        "label_template": "sea urchins pencil {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "comments": {
+        "field": "B38",
+        "type": "comma-separated",
+        "label_template": "comment_{0}"
+      }
+    }
+  },
+  {
+    "name": "impact",
+    "key": {
+      "field": "A1",
+      "phrase": "impact"
+    },
+    "field_def": {
+      "reef name": "B2",
+      "dive site name": "B3",
+      "dive site number": "B4",
+      "depth": "B5",
+      "habitat": "B6",
+      "date": { "field": "B7", "type": "date", "format": "%d/%m/%Y" },
+      "time": { "field": "B8", "type": "time", "format": "%H:%M" },
+      "entered by": "B9",
+      "surveyor": "B10",
+      "team leader": "B11",
+      "camera id": "B12",
+      "bleaching colonies": {
+        "range": "B14:E14",
+        "label_template": "bleaching colonies {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "bleaching population": {
+        "range": "B15:E15",
+        "label_template": "bleaching population {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "damage boat or anchor": {
+        "range": "B16:E16",
+        "label_template": "damage boat or anchor {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "damage dynamite": {
+        "range": "B17:E17",
+        "label_template": "damage dynamite {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "damage other": {
+        "range": "B18:E18",
+        "label_template": "damage other {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "coral disease colonies": {
+        "range": "B19:E19",
+        "label_template": "coral disease colonies {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "coral disease population": {
+        "range": "B20:E20",
+        "label_template": "coral disease population {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "scars crown of thorns": {
+        "range": "B21:E21",
+        "label_template": "scars crown of thorns {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "scars drupella": {
+        "range": "B22:E22",
+        "label_template": "scars drupella {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "scars unknown other": {
+        "range": "B23:E23",
+        "label_template": "scars unknown other {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "trash fishing line": {
+        "range": "B24:E24",
+        "label_template": "trash fishing line {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "trash fish nets": {
+        "range": "B25:E25",
+        "label_template": "trash fish nets {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "trash general": {
+        "range": "B26:E26",
+        "label_template": "trash general {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "dominant algae": {
+        "range": "B27:D27",
+        "label_template": "dominant algae {0}",
+        "label_start": 1,
+        "label_increment": 1
+      },
+      "comments": {
+        "field": "B29",
+        "type": "comma-separated",
+        "label_template": "comment_{0}"
+      }
+    }
+  },
+  {
+    "name": "fish",
+    "key": {
+      "field": "A1",
+      "phrase": "fish"
+    },
+    "field_def": {
+      "reef name": "B2",
+      "dive site name": "B3",
+      "dive site number": "B4",
+      "depth": "B5",
+      "habitat": "B6",
+      "date": { "field": "B7", "type": "date", "format": "%d/%m/%Y" },
+      "time": { "field": "B8", "type": "time", "format": "%H:%M" },
+      "entered by": "B9",
+      "surveyor": "B10",
+      "team leader": "B11",
+      "camera id": "B12",
+      "butterfly": {
+        "range": "B14:E14",
+        "label_template": "butterfly {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper coral trout 30-40cm": {
+        "range": "B15:E15",
+        "label_template": "grouper coral trout 30-40cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper coral trout 40-50cm": {
+        "range": "B16:E16",
+        "label_template": "grouper coral trout 40-50cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper coral trout 50-60cm": {
+        "range": "B17:E17",
+        "label_template": "grouper coral trout 50-60cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper coral trout >60cm": {
+        "range": "B18:E18",
+        "label_template": "grouper coral trout >60cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper grouper 30-40cm": {
+        "range": "B19:E19",
+        "label_template": "grouper grouper 30-40cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper grouper 40-50cm": {
+        "range": "B20:E20",
+        "label_template": "grouper grouper 40-50cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper grouper 50-60cm": {
+        "range": "B21:E21",
+        "label_template": "grouper grouper 50-60cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper grouper >60cm": {
+        "range": "B22:E22",
+        "label_template": "grouper grouper >60cm {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper queensland grouper": {
+        "range": "B23:E23",
+        "label_template": "grouper queensland grouper {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "grouper barramundi cod": {
+        "range": "B24:E24",
+        "label_template": "grouper barramundi cod {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "wrasse blue grouper": {
+        "range": "B25:E25",
+        "label_template": "wrasse blue grouper {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "wrasse humphead wrasse": {
+        "range": "B26:E26",
+        "label_template": "wrasse humphead wrasse {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "moray eel": {
+        "range": "B27:E27",
+        "label_template": "moray eel {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "parrotfish bumphead": {
+        "range": "B28:E28",
+        "label_template": "parrotfish bumphead {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "parrotfish other": {
+        "range": "B29:E29",
+        "label_template": "parrotfish other {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "pink snapper": {
+        "range": "B30:E30",
+        "label_template": "pink snapper {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "snapper emperor snapper": {
+        "range": "B31:E31",
+        "label_template": "snapper emperor snapper {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "snapper emperor spangled emperor": {
+        "range": "B32:E32",
+        "label_template": "snapper emperor spangled emperor {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "snapper emperor other emperor": {
+        "range": "B33:E33",
+        "label_template": "snapper emperor other emperor {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "morwong": {
+        "range": "B34:E34",
+        "label_template": "morwong {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "sweetlips": {
+        "range": "B35:E35",
+        "label_template": "sweetlips {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "wobbegong": {
+        "range": "B36:E36",
+        "label_template": "wobbegong {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "rare animals": {
+        "range": "B37:E37",
+        "label_template": "rare animals {0}",
+        "label_start": 0,
+        "label_increment": 25
+      },
+      "comments": {
+        "field": "B39",
         "type": "comma-separated",
         "label_template": "comment_{0}"
       }
