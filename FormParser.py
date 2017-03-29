@@ -45,7 +45,6 @@ class FormParser:
                 c = field_to_coordinates(fd['field'])
                 if 'type' in fd:
                     if fd['type'] == 'date':
-                        # TODO
                         v = arr[c[0]][c[1]]
                         if isinstance(v, str) and ('format' in fd):
                             v = datetime.datetime.strptime(v, fd['format']).date()
